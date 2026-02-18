@@ -1,0 +1,46 @@
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet, Text, View } from 'react-native';
+
+
+export default function HomeScreen() {
+  const cardItems  = [{
+    id: 'start-training',
+    title: 'Training Session',
+    href: '/session/start',
+  }, {
+    id: 'create-training',
+    title: 'Create Training',
+    href: '/training/create',
+  }]
+
+  return (
+    <SafeAreaView style={styles.container}>
+      <View style={styles.cardsContainer}>
+        {cardItems.map((item) => (
+          <View key={item.id}>
+            <Text>{item.title}</Text>
+          </View>
+        ))}
+      </View>    
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+  },
+  cardsContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: 16,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#fff',
+  },
+});
