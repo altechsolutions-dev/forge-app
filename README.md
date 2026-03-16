@@ -1,4 +1,4 @@
-# 🏋️‍♂️ FORGE - L'Entraînement Piloté par l'IA
+# 🏋️‍♂️ FORGE - L'Entraînement Piloté par l'IA 2
 
 **FORGE** est une plateforme de musculation intelligente conçue pour combler le fossé entre la théorie scientifique et la pratique en salle. L'application utilise une IA adaptative pour transformer chaque smartphone en un coach d'élite capable de s'ajuster en temps réel au profil de l'utilisateur.
 
